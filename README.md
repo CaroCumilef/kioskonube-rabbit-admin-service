@@ -1,0 +1,1 @@
+# kioskonube-rabbit-admin-service
