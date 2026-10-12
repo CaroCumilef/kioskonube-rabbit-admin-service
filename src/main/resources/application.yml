@@ -1,0 +1,17 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: rabbit-admin-service
+  rabbitmq:
+    host: ${RABBITMQ_HOST:rabbitmq}
+    port: ${RABBITMQ_PORT:5672}
+    # Los valores reales vienen del .env del servidor. 'guest' es solo el valor por defecto de RabbitMQ.
+    username: ${RABBITMQ_USER:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+
+kioskonube:
+  rabbit-admin:
+    dlx-suffix: .dlx
+    dlq-suffix: .dlq
